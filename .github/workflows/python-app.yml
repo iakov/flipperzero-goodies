@@ -32,7 +32,7 @@ jobs:
       run: make build-keys-release RELEASE=$(git describe --tags --dirty --broken --abbrev=4)
 
     - name: Publish build artifact
-      uses: actions/upload-artifact@4.5.0
+      uses: actions/upload-artifact@v4
       with:
         path: '*.zip'
 
